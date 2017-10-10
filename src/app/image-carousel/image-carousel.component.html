@@ -1,0 +1,34 @@
+<p>
+  image-carousel works!
+</p>
+<div class="card_container">
+  <div class="carousel-container">
+    <div
+      class="carousel-wrapper" #carouselwrapper
+      [style.width]="width + 'px'" >
+      <div
+        class="carouselamos"
+        [style.transform]="'translateX('+amount+'px)'"
+        [style.webkitTransform]="'translateX('+amount+'px)'"
+        #list >
+        <div class="image" *ngFor="let image of images">
+          <img src="{{image}}" height="200"/>
+        </div>
+    </div>
+    </div>
+    <div  class="controls">
+      <button
+      (click)="scroll(false, list)"
+       >
+       prev
+       <!-- <md-icon>keyboard_arrow_left </md-icon> -->
+      </button>
+      <button
+      (click)="scroll(true, list)"
+      >
+      next
+       <!-- <md-icon >keyboard_arrow_right </md-icon> -->
+     </button>
+   </div>
+  </div>
+</div>

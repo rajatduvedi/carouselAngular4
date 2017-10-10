@@ -1,0 +1,18 @@
+.carousel-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.carousel-wrapper {
+  overflow: hidden;
+}
+.carouselamos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  transition: transform 1s, -webkit-transform 1s;
+}
